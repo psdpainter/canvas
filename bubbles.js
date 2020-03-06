@@ -92,9 +92,9 @@ function init() {
 function animate() {
 	c.clearRect(0, 0, innerWidth, innerHeight);
 	requestAnimationFrame(animate);
-	for(var j = 0; j < totalCircles; j++) {
-		circles[j].render();
-	}
+	totalCircles.forEach(function(circle) {
+		circle.render();
+	});
 }
 
 init();
