@@ -40,14 +40,11 @@ function init() {
 
 function animate() {
 	requestAnimationFrame(animate);
-
 	c.clearRect(0, 0, canvas.width, canvas.height);
 	balls.forEach(function(ball) {
 		ball.update();
 	});
-	
 }
 
 init();
-
 animate();
