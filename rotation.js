@@ -30,9 +30,9 @@ function Ball(x, y, radius, color) {
 
 var balls = [];
 
-function init() {
+function init(num) {
 	balls = [];
-	for(var i = 0; i < 1; i++) {
+	for(var i = 0; i < num; i++) {
 		var ball = new Ball(canvas.width / 2, canvas.height / 2, 20, 'blue');
 		balls.push(ball);
 	}
@@ -46,5 +46,5 @@ function animate() {
 	});
 }
 
-init();
+init(1);
 animate();
