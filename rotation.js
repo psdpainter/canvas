@@ -46,5 +46,5 @@ function animate() {
 	});
 }
 
-init(1);
+init();
 animate();
